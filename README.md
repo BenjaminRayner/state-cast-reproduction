@@ -29,8 +29,6 @@ Inputs `"00123"` and `"ABC"` remain strings. The script calls the upstream casts
 
 ## Why this matters
 
-A numeric-looking identifier can still be a string database key. The reported application uses SQL Server tables with VARCHAR keys and string-keyed Eloquent models.
-
 When a cast value becomes an integer query parameter, SQL Server can attempt to convert VARCHAR column values to integers. This can fail if the same column contains alphanumeric codes.
 
 The cast conversion is the independently runnable reproduction in this repository. It does not create a Filament panel or reproduce the full application UI.
