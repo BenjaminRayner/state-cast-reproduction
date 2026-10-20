@@ -1,0 +1,18 @@
+{
+    "name": "benjaminrayner/state-cast-bug",
+    "description": "Minimal reproduction of numeric string option values being converted to integers by Filament state casts.",
+    "type": "project",
+    "require": {
+        "php": "^8.5",
+        "filament/schemas": "5.10.3",
+        "laravel/framework": "13.38.0",
+        "livewire/livewire": "4.4.7"
+    },
+    "scripts": {
+        "reproduce": "@php filament-option-cast-reproduction.php"
+    },
+    "config": {
+        "allow-plugins": false,
+        "sort-packages": true
+    }
+}
